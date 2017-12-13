@@ -9,7 +9,6 @@ import sk.cyklosoft.java8.data.AddressData;
 public class MyStream {
 
 	public static void main(String[] args) {
-		
 		AddressData addressData = new AddressData();
 		List<Address> addressList = addressData.getAddress();
 		List<String> towns = addressList.stream()
