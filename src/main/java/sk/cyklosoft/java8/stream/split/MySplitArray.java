@@ -1,4 +1,4 @@
-package sk.cyklosoft.stream.split;
+package sk.cyklosoft.java8.stream.split;
 
 import static java.util.stream.Collectors.toList;
 
