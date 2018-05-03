@@ -22,5 +22,16 @@ public class AddressData {
 	public List<Address> getAddress() {
 		return addressList;
 	}
+	
+	public String getNames() {
+		String names = "\"aaaa \"<rado 1>;bbbbbbb ,cccc,acccc<rado 2>;ddddd<rado 3>;rad,ko <rado 4>";
+		return 	names;
+	}
+	
+	public String getNamesOrig() {
+		String names = "\"aaaa \"<rado 1>,bbbbbbb ,cccc,acccc<rado 2>,ddddd<rado 3>,rad,ko <rado 4>";
+		return 	names;
+	}
+
 
 }

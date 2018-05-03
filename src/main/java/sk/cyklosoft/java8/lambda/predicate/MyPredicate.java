@@ -9,10 +9,15 @@ import sk.cyklosoft.java8.data.Address;
 public class MyPredicate {
 	
 	public static Predicate<Address> lowNumber() {
-		return a -> a.getNumber() < 5;
+		return a -> a.getNumber() < 3;
 	}
 	
 	public static List<Address> filterAddresses (List<Address> addresses, Predicate<Address> predicate) {
 		return addresses.stream().filter( predicate ).collect(Collectors.<Address>toList());
 	}
+	
+	public static Predicate<String> isNotValidEmailAddress() {
+		return a -> !a.contains("2");
+	}
+
 }
