@@ -28,6 +28,7 @@ public class GroupByMain {
 				  .collect(	
 						  Collectors.partitioningBy(Cost::getSignum,
 								  Collectors.groupingBy(Cost::getDate,Collectors.summingInt(Cost::getAmount))));
+		
 		System.out.println(costsPerSignumAndDate);
 
 		
